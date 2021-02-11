@@ -18,6 +18,7 @@
         @foreach ($data as $item)
         @if ($item['tipo'] == "corta")
         <div class="card">
+            <div class="overlay"></div>
             <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
             <img src="{{ $item['src'] }}" alt="">
         </div>
@@ -29,6 +30,7 @@
         @foreach ($data as $item)
         @if ($item['tipo'] == "cortissima")
         <div class="card">
+            <div class="overlay"></div>
             <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
             <img src="{{ $item['src'] }}" alt="">
         </div>
