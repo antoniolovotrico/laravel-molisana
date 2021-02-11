@@ -1,0 +1,31 @@
+//Header
+#app{
+    @include flex_wrapper;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    @include flex_container(column, 100%, 200px, center, center);
+    img{
+        width: 15%;
+        height: 70%
+    }
+    nav{
+        @include flex_container(column, 100%, 30%, center, center);
+        background-color: lightgreen;
+        ul{
+            @include flex_container(row, 30%, 100%, space-evenly, center);
+            list-style: none;
+        } 
+        a{
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: white;
+            &:hover{
+                color: darkblue;
+                border-bottom: 4px solid darkblue;
+                transform: scale(1.15);
+                transition: ease-in-out 1s;
+            }
+        }
+    }
+}

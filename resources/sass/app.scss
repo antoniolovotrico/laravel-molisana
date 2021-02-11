@@ -5,78 +5,12 @@
 @import  "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import  "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import  "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-
-// Mixins
-@mixin reset {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@mixin flex_wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    align-items: center;    
-}
-
-@mixin flex_container($direction, $width, $height, $justy, $align){
-    display: flex;
-    flex-direction: $direction;
-    width: $width;
-    height: $height;
-    justify-content: $justy;
-    align-items: $align;   
-}
+// Partials
+@import 'partials/mixins';
+@import 'partials/header';
+@import 'partials/main';
 
 //Reset
 *{
     @include reset;
-}
-
-//Header
-#app{
-    @include flex_wrapper;
-    font-family: 'Lato', sans-serif;
-}
-header{
-    @include flex_container(column, 100%, 200px, center, center);
-    img{
-        width: 15%;
-        height: 70%
-    }
-    nav{
-        @include flex_container(column, 100%, 30%, center, center);
-        background-color: lightgreen;
-        ul{
-            @include flex_container(row, 30%, 100%, space-evenly, center);
-            list-style: none;
-        } 
-    }
-}
-
-// Main
-main{
-    @include flex_container(column, 100%, 100%, space-evenly, center);
-    background-image: url('../img/fondo-pag-speciali.jpg');
-    overflow-y: scroll;
-    .lunghe_container, .corte_container, .cortissime_container{
-        @include flex_container(row, 90%, 40%, flex-start, center); 
-        flex-wrap: wrap;
-    }
-    h2{
-        margin: 2%;
-        font-size: 2rem;
-        background-color: lightgray;
-    }
-    .card{
-        width: 28%;
-        min-width: 300px;
-        height: 40%;
-        margin: 2%;
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
 }
