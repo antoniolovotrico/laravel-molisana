@@ -1,1 +1,63 @@
-//
+// Google Font Caveat
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300%3b0,400%3b0,700%3b1,300%3b1,400%3b1,700&display=swap');
+// Fontawesome Caveat
+@import  "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import  "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import  "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import  "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+// Mixins
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;    
+}
+
+@mixin flex_container($direction, $width, $height, $justy, $align){
+    display: flex;
+    flex-direction: $direction;
+    width: $width;
+    height: $height;
+    justify-content: $justy;
+    align-items: $align;   
+}
+
+//Reset
+*{
+    @include reset;
+}
+
+//Header
+#app{
+    @include flex_wrapper;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    @include flex_container(column, 100%, 25%, center, center);
+    img{
+        width: 15%;
+        height: 70%
+    }
+    nav{
+        @include flex_container(column, 100%, 30%, center, center);
+        background-color: lightgreen;
+        ul{
+            @include flex_container(row, 30%, 100%, space-evenly, center);
+            list-style: none;
+        } 
+    }
+}
+
+// Main
+main{
+    @include flex_container(column, 100%, 75%, center, center);
+    background-image: url('../img/fondo-pag-speciali.jpg');
+}
