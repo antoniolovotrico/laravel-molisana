@@ -20,7 +20,40 @@
                     </ul>
                 </nav>   
             </header>
-            <main>
+            <main> 
+                <h2>LE LUNGHE</h2>
+                <div class="lunghe_container">
+                    @foreach ($data as $item)
+                    @if ($item['tipo'] == "lunga")
+                    <div class="card">
+                        <img src="{{ $item['src'] }}" alt="">
+                    </div>
+                    @endif
+                    @endforeach
+                </div>
+                <h2>LE CORTE</h2>
+                <div class="corte_container">
+                    @foreach ($data as $item)
+                    @if ($item['tipo'] == "corta")
+                    <div class="card">
+                        <img src="{{ $item['src'] }}" alt="">
+                    </div>
+                    @endif
+                    @endforeach
+                </div>
+                <h2>LE CORTISSIME</h2>
+                <div class="cortissime_container">
+                    @foreach ($data as $item)
+                    @if ($item['tipo'] == "cortissima")
+                    <div class="card">
+                        <img src="{{ $item['src'] }}" alt="">
+                    </div>
+                    @endif
+                    @endforeach
+                </div>
+               
+               
+                
                 
                 
             </main>

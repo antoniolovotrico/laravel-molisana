@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
     align-items: center;    
 }
 
@@ -41,7 +40,7 @@
     font-family: 'Lato', sans-serif;
 }
 header{
-    @include flex_container(column, 100%, 25%, center, center);
+    @include flex_container(column, 100%, 200px, center, center);
     img{
         width: 15%;
         height: 70%
@@ -58,6 +57,26 @@ header{
 
 // Main
 main{
-    @include flex_container(column, 100%, 75%, center, center);
+    @include flex_container(column, 100%, 100%, space-evenly, center);
     background-image: url('../img/fondo-pag-speciali.jpg');
+    overflow-y: scroll;
+    .lunghe_container, .corte_container, .cortissime_container{
+        @include flex_container(row, 90%, 40%, flex-start, center); 
+        flex-wrap: wrap;
+    }
+    h2{
+        margin: 2%;
+        font-size: 2rem;
+        background-color: lightgray;
+    }
+    .card{
+        width: 28%;
+        min-width: 300px;
+        height: 40%;
+        margin: 2%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
 }

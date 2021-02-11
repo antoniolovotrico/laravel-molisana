@@ -6154,7 +6154,6 @@ readers do not read off random characters that represent icons */
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
   align-items: center;
   font-family: "Lato", sans-serif;
 }
@@ -6163,7 +6162,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 25%;
+  height: 200px;
   justify-content: center;
   align-items: center;
 }
@@ -6197,9 +6196,40 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 75%;
-  justify-content: center;
+  height: 100%;
+  justify-content: space-evenly;
   align-items: center;
   background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
+  overflow-y: scroll;
+}
+
+main .lunghe_container,
+main .corte_container,
+main .cortissime_container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 40%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main h2 {
+  margin: 2%;
+  font-size: 2rem;
+  background-color: lightgray;
+}
+
+main .card {
+  width: 28%;
+  min-width: 300px;
+  height: 40%;
+  margin: 2%;
+}
+
+main .card img {
+  height: 100%;
+  width: 100%;
 }
 
