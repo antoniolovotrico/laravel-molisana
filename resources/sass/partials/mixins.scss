@@ -8,13 +8,11 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
+    flex-basis: 100vh;
     align-items: center;    
 }
-@mixin flex_container($direction, $width, $height, $justy, $align){
+@mixin flex_container($direction, $basis){
     display: flex;
     flex-direction: $direction;
-    width: $width;
-    height: $height;
-    justify-content: $justy;
-    align-items: $align;   
+    flex-basis: $basis;  
 }

@@ -1,6 +1,8 @@
 <div id="app">
     <header> 
-        <img src="{{ asset('img/logo.png') }}" alt="">
+        <div> 
+            <img src="{{ asset('img/logo.png') }}" alt="">
+        </div>
         <nav>
             <ul>
                 <li><a href="home">HOME</a></li>

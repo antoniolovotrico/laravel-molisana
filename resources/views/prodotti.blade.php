@@ -8,6 +8,8 @@
         <div class="card">
             <div class="overlay"></div>
             <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
+            <h3>{{ $item['titolo'] }}</h3>
+            <p>Cottura:{{ $item['cottura'] }}</p>
             <img src="{{ $item['src'] }}" alt="">
         </div>
         @endif
@@ -20,6 +22,8 @@
         <div class="card">
             <div class="overlay"></div>
             <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
+            <h3>{{ $item['titolo'] }}</h3>
+            <p>Cottura:{{ $item['cottura'] }}</p>
             <img src="{{ $item['src'] }}" alt="">
         </div>
         @endif
@@ -32,6 +36,8 @@
         <div class="card">
             <div class="overlay"></div>
             <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
+            <h3>{{ $item['titolo'] }}</h3>
+            <p>Cottura:{{ $item['cottura'] }}</p>
             <img src="{{ $item['src'] }}" alt="">
         </div>
         @endif
