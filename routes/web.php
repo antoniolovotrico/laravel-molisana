@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $dati = json_decode(Config('data_pasta.data'));
+    $dati = json_decode(Config('data_pasta.data'), true);
     return view('prodotti', compact('dati'));
 });
 
