@@ -33,6 +33,7 @@ header{
         ul{
             @include flex_container(row, 100%);
             width: 30%;
+            min-width: 300px;
             justify-content: space-evenly;
             align-items: center;
             list-style: none;

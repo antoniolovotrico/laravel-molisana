@@ -13,12 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('prodotti', function () {
     $dati = json_decode(Config('data_pasta.data'), true);
     return view('prodotti', compact('dati'));
 })->name('prodotti');
+Route::get('prodotti/{key}', function ($key) {
+    $dati = json_decode(Config('data_pasta.data'), true);
+    $prodotto = $dati[$key];
+    return view('prodotto', compact('prodotto'));
+})->name('prodotto');
 
-Route::get('home', function () {
+Route::get('/', function () {
     return view('home');
 })->name('home');
 

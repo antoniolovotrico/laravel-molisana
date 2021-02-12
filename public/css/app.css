@@ -6196,6 +6196,7 @@ header nav ul {
   flex-direction: row;
   flex-basis: 100%;
   width: 30%;
+  min-width: 300px;
   justify-content: space-evenly;
   align-items: center;
   list-style: none;

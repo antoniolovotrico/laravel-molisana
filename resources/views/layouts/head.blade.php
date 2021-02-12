@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>laravel-molisana</title>
+        <title>laravel-molisana @yield('title') </title>
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     
     </head>
