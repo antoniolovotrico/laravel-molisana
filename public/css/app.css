@@ -6214,6 +6214,11 @@ header nav ul a:hover {
   transition: ease-in-out 1s;
 }
 
+.active {
+  color: darkblue;
+  border-bottom: 4px solid darkblue;
+}
+
 main {
   display: flex;
   flex-direction: column;

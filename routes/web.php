@@ -16,12 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $dati = json_decode(Config('data_pasta.data'), true);
     return view('prodotti', compact('dati'));
-});
+})->name('prodotti');
 
 Route::get('home', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('contatti', function () {
     return view('contatti');
-});
+})->name('contatti');
