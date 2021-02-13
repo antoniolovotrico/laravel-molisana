@@ -6351,14 +6351,15 @@ main .prod_description {
   flex-basis: 400px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 1.6rem;
   font-style: italic;
   color: white;
+  flex-wrap: wrap;
 }
 
 main .prod_description p {
-  flex-basis: 50%;
+  flex-basis: 34%;
 }
 
 * {

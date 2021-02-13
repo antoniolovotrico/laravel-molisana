@@ -11,7 +11,10 @@ prodotto
     <h3>Peso : {{ $prodotto['peso'] }}</h3>
 </div>
 <div class="prod_description">
-    <p>{{ $prodotto['descrizione'] }}</p>
+    @foreach ($descrizione as $item)
+    <p>{{ $item }}</p> 
+    @endforeach
+    
 </div>
 <img class="prod_img_footer" src="{{ $prodotto['src-p'] }}" alt="">
     
