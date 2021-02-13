@@ -6232,8 +6232,12 @@ main {
 
 main h2 {
   margin: 2%;
-  font-size: 2rem;
-  background-color: lightgray;
+  padding: 3%;
+  font-size: 3.5rem;
+  color: white;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
 }
 
 main .lunghe_container,
@@ -6253,6 +6257,7 @@ main .cortissime_container .card {
   min-width: 300px;
   margin: 2%;
   position: relative;
+  border-radius: 5%;
 }
 
 main .lunghe_container .card .overlay,
@@ -6264,6 +6269,7 @@ main .cortissime_container .card .overlay {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
+  border-radius: 5%;
 }
 
 main .lunghe_container .card .svg,
@@ -6323,6 +6329,7 @@ main .lunghe_container .card:hover .overlay,
 main .corte_container .card:hover .overlay,
 main .cortissime_container .card:hover .overlay {
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
 }
 
 main .lunghe_container .card img,
@@ -6330,6 +6337,7 @@ main .corte_container .card img,
 main .cortissime_container .card img {
   height: 100%;
   width: 100%;
+  border-radius: 5%;
 }
 
 main .prod_title,
