@@ -10,6 +10,7 @@ main{
         font-size: 2rem;
         background-color: lightgray;
     }
+    // Main Page Prodotti
     .lunghe_container, .corte_container, .cortissime_container{
         width: 90%;
         display: flex;
@@ -70,5 +71,30 @@ main{
             }
         }
     }
-    
+    // Main Page Prodotto Singolo
+    .prod_title , .prod_description_bar{
+        display: flex;
+        background-color: #B8DAE5;
+        width: 100%;
+        flex-basis: 150px;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 2.5rem;
+        font-style: italic;
+        color: white;
+    }
+    .prod_description{
+        width: 100%;
+        background-color: #B8DAE5;
+        flex-basis: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        font-style: italic;
+        color: white;
+        p{
+            flex-basis: 50%;
+        }
+    }
 }

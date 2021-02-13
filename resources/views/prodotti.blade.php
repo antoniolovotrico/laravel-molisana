@@ -9,10 +9,10 @@ prodotti
         @if ($item['tipo'] == "lunga")
         <div class="card">
             <div class="overlay"></div>
-            <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
             <a href="{{ route('prodotto', $key) }}">
-                <h3>{{ $item['titolo'] }}</h3>
+                <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
             </a>
+                <h3>{{ $item['titolo'] }}</h3>
             <p>Cottura:{{ $item['cottura'] }}</p>
             <img src="{{ $item['src'] }}" alt="">
         </div>
@@ -25,7 +25,9 @@ prodotti
         @if ($item['tipo'] == "corta")
         <div class="card">
             <div class="overlay"></div>
-            <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
+            <a href="{{ route('prodotto', $key) }}">
+                <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
+            </a>
             <h3>{{ $item['titolo'] }}</h3>
             <p>Cottura:{{ $item['cottura'] }}</p>
             <img src="{{ $item['src'] }}" alt="">
@@ -39,7 +41,9 @@ prodotti
         @if ($item['tipo'] == "cortissima")
         <div class="card">
             <div class="overlay"></div>
-            <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
+            <a href="{{ route('prodotto', $key) }}">
+                <img class="svg" src="{{ asset('img/icon.svg') }}" alt="">
+            </a>
             <h3>{{ $item['titolo'] }}</h3>
             <p>Cottura:{{ $item['cottura'] }}</p>
             <img src="{{ $item['src'] }}" alt="">

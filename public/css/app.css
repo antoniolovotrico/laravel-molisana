@@ -6332,6 +6332,35 @@ main .cortissime_container .card img {
   width: 100%;
 }
 
+main .prod_title,
+main .prod_description_bar {
+  display: flex;
+  background-color: #B8DAE5;
+  width: 100%;
+  flex-basis: 150px;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: white;
+}
+
+main .prod_description {
+  width: 100%;
+  background-color: #B8DAE5;
+  flex-basis: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: white;
+}
+
+main .prod_description p {
+  flex-basis: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
