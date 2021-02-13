@@ -1,11 +1,9 @@
- @include('layouts.head')
+@include('layouts.head')
+@include('layouts.header')
 
- @include('layouts.header')
- 
- 
-            <main>
-                @yield('main_content')
-            </main>
-        </div>  
-    </body>
-</html>
+<main>
+    @yield('main_content')
+</main> 
+@include('layouts.footer')          
+
+       

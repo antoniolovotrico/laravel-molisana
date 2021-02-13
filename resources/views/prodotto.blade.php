@@ -6,9 +6,18 @@ prodotto
 <h1 class="prod_title">{{ $prodotto['titolo'] }}</h1>
 <img class="prod_img_header" src="{{ $prodotto['src-h'] }}" alt="">
 <div class="prod_description_bar">
-    <h3>Tipo di Pasta : {{ $prodotto['tipo'] }}</h3>
-    <h3>Tempo di Cottura : {{ $prodotto['cottura'] }}</h3>
-    <h3>Peso : {{ $prodotto['peso'] }}</h3>
+    <div>
+        <h3>Tipo di Pasta :</h3>
+        <h3>{{ $prodotto['tipo'] }}</h3>
+    </div>
+    <div>
+        <h3>Tempo di Cottura :</h3>
+        <h3>{{ $prodotto['cottura'] }}</h3>
+    </div>
+    <div>
+        <h3>Peso :</h3>
+        {{ $prodotto['peso'] }}
+    </div>  
 </div>
 <div class="prod_description">
     @foreach ($descrizione as $item)

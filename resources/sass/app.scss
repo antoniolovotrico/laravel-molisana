@@ -1,5 +1,6 @@
 // Google Font Caveat
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300%3b0,400%3b0,700%3b1,300%3b1,400%3b1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Teko:wght@300;400;500;600;700&display=swap');
 // Fontawesome Caveat
 @import  "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import  "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
@@ -7,8 +8,10 @@
 @import  "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 // Partials
 @import 'partials/mixins';
+@import 'partials/variables';
 @import 'partials/header';
 @import 'partials/main';
+@import 'partials/footer';
 
 //Reset
 *{

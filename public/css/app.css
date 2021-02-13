@@ -1,9 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300%3b0,400%3b0,700%3b1,300%3b1,400%3b1,700&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;
 
-/*!
- * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
+0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Teko:wght@300;400;500;600;700&display=swap);@charset "UTF-8";
 
 .fa,
 .fas,
@@ -6162,7 +6159,7 @@ html body {
   width: 100vw;
   flex-basis: 100vh;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -6188,7 +6185,7 @@ header nav {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: lightgreen;
+  background-color: #99dd99;
 }
 
 header nav ul {
@@ -6202,22 +6199,31 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul a {
-  text-decoration: none;
-  font-size: 1.1rem;
-  color: white;
+header nav ul li {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  justify-content: space-evenly;
 }
 
-header nav ul a:hover {
-  color: darkblue;
-  border-bottom: 4px solid darkblue;
+header nav ul li a {
+  font-family: "Teko", sans-serif;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+header nav ul li a:hover {
+  color: #011941;
+  border-bottom: 4px solid #011941;
   transform: scale(1.15);
   transition: ease-in-out 1s;
 }
 
 .active {
-  color: darkblue;
-  border-bottom: 4px solid darkblue;
+  color: #011941;
+  border-bottom: 4px solid #011941;
 }
 
 main {
@@ -6225,6 +6231,7 @@ main {
   flex-direction: column;
   flex-basis: 85%;
   width: 100%;
+  min-height: 80%;
   justify-content: space-evenly;
   align-items: center;
   background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
@@ -6232,12 +6239,14 @@ main {
 
 main h2 {
   margin: 2%;
-  padding: 3%;
+  padding: 1% 2%;
   font-size: 3.5rem;
-  color: white;
+  font-weight: 600;
+  color: #011941;
   font-style: italic;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2%;
+  font-family: "Teko", sans-serif;
 }
 
 main .lunghe_container,
@@ -6257,19 +6266,19 @@ main .cortissime_container .card {
   min-width: 300px;
   margin: 2%;
   position: relative;
-  border-radius: 5%;
+  border-radius: 2%;
 }
 
 main .lunghe_container .card .overlay,
 main .corte_container .card .overlay,
 main .cortissime_container .card .overlay {
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 100%;
-  border-radius: 5%;
+  height: 98%;
+  border-radius: 2%;
 }
 
 main .lunghe_container .card .svg,
@@ -6311,7 +6320,8 @@ main .cortissime_container .card:hover h3 {
   position: absolute;
   top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -10%);
+  color: #011941;
 }
 
 main .lunghe_container .card:hover p,
@@ -6321,15 +6331,15 @@ main .cortissime_container .card:hover p {
   position: absolute;
   top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  transform: translate(-50%, -70%);
+  color: #011941;
 }
 
 main .lunghe_container .card:hover .overlay,
 main .corte_container .card:hover .overlay,
 main .cortissime_container .card:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2%;
 }
 
 main .lunghe_container .card img,
@@ -6337,7 +6347,7 @@ main .corte_container .card img,
 main .cortissime_container .card img {
   height: 100%;
   width: 100%;
-  border-radius: 5%;
+  border-radius: 2%;
 }
 
 main .prod_title,
@@ -6351,6 +6361,16 @@ main .prod_description_bar {
   font-size: 2.5rem;
   font-style: italic;
   color: white;
+  font-family: "Teko", sans-serif;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+main .prod_title div,
+main .prod_description_bar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main .prod_description {
@@ -6368,6 +6388,92 @@ main .prod_description {
 
 main .prod_description p {
   flex-basis: 34%;
+  font-family: "Teko", sans-serif;
+}
+
+main .main_container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  flex-basis: 80%;
+  background-color: #B8DAE5;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main_container h1 {
+  margin: 2%;
+  padding: 1% 2%;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #011941;
+  font-style: italic;
+  border-radius: 2%;
+  font-family: "Teko", sans-serif;
+}
+
+main .main_container h3 {
+  padding: 1% 2%;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: italic;
+  border-radius: 2%;
+  font-family: "Teko", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  background-color: white;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Teko", sans-serif;
+}
+
+footer .container_footer {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 80%;
+  height: 70%;
+  justify-content: center;
+}
+
+footer .container_footer div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+
+footer .container_footer div img {
+  flex-basis: 50%;
+  width: 60%;
+}
+
+footer .container_footer div .link {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+  height: 80%;
+}
+
+footer .container_footer div a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: grey;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 5%;
+}
+
+footer .container_footer div a:hover {
+  color: #011941;
+  font-weight: 600;
 }
 
 * {

@@ -2,17 +2,20 @@
 main{
     @include flex_container(column, 85%);
     width: 100%;
+    min-height: 80%;
     justify-content: space-evenly;
     align-items: center;
     background-image: url('../../img/fondo-pag-speciali.jpg');
     h2{
         margin: 2%;
-        padding: 3%;
+        padding: 1% 2%;
         font-size: 3.5rem;
-        color: white;
+        font-weight: 600;
+        color: $bars_color;
         font-style: italic;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 5%;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 2%;
+        font-family: 'Teko', sans-serif;
     }
     // Main Page Prodotti
     .lunghe_container, .corte_container, .cortissime_container{
@@ -26,15 +29,15 @@ main{
             min-width: 300px;
             margin: 2%;
             position: relative;
-            border-radius: 5%;
+            border-radius: 2%;
             .overlay{
                 position: absolute;
-                top: 50%;
+                top: 49%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 width: 100%;
-                height: 100%;
-                border-radius: 5%;
+                height: 98%;
+                border-radius: 2%;
             }
             .svg,p,h3{
                 display: none;
@@ -57,25 +60,26 @@ main{
                     position: absolute;
                     top: 10%;
                     left: 50%;
-                    transform: translate(-50%,-50%); 
+                    transform: translate(-50%,-10%);
+                    color: $bars_color; 
                 }
                 p{
                     display: block; 
                     position: absolute;
                     top: 70%;
                     left: 50%;
-                    transform: translate(-50%,-50%);
-                    color: white;
+                    transform: translate(-50%,-70%);
+                    color: $bars_color;
                 }
                 .overlay{
-                    background-color: rgba(0, 0, 0, 0.5);
-                    border-radius: 5%;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 2%;
                 }
             }
             img{
                 height: 100%;
                 width: 100%;
-                border-radius: 5%;
+                border-radius: 2%;
             }
         }
     }
@@ -90,6 +94,15 @@ main{
         font-size: 2.5rem;
         font-style: italic;
         color: white;
+        font-family: 'Teko', sans-serif;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        div{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+
+        }
     }
     .prod_description{
         width: 100%;
@@ -104,6 +117,37 @@ main{
         flex-wrap: wrap;
         p{
             flex-basis: 34%;
+            font-family: 'Teko', sans-serif;
+        }
+    }
+    // Main Page Contatti and Home
+    .main_container{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        flex-basis: 80%;
+        background-color: #B8DAE5;
+        justify-content: center;
+        align-items: center;
+        h1{
+            margin: 2%;
+            padding: 1% 2%;
+            font-size: 3rem;
+            font-weight: 600;
+            color: $bars_color;
+            font-style: italic;
+            border-radius: 2%;
+            font-family: 'Teko', sans-serif; 
+        }
+        h3{
+            padding: 1% 2%;
+            font-size: 3rem;
+            font-weight: 600;
+            font-style: italic;
+            border-radius: 2%;
+            font-family: 'Teko', sans-serif;
+            color: white;
+            text-align: center;
         }
     }
 }

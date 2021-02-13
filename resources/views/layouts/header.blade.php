@@ -5,9 +5,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="{{ route('home') }}" class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}">HOME</a></li>
-                <li><a href="{{ route('prodotti') }}" class="{{ Route::currentRouteName() === 'prodotti' ? 'active' : '' }}">PRODOTTI</a></li>
-                <li><a href="{{ route('contatti') }}" class="{{ Route::currentRouteName() === 'contatti' ? 'active' : '' }}">CONTATTI</a></li>
+                <li>
+                    @foreach ($foot_data as $item)
+                    <a href="{{ route($item['name']) }}" class="{{ Route::currentRouteName() === $item['name'] ? 'active' : '' }}">{{ $item['name'] }}</a>
+                    @endforeach
+                </li>
             </ul>
         </nav>   
     </header>
