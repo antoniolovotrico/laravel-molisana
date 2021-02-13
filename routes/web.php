@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('prodotti', function () {
     $dati = json_decode(Config('data_pasta.data'), true);
     return view('prodotti', compact('dati'));
+    dd($dati);
 })->name('prodotti');
 
 // Route Prodotto singolo
