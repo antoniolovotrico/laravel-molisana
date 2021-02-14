@@ -6266,6 +6266,7 @@ main .corte_container .card,
 main .cortissime_container .card {
   flex-basis: 28%;
   min-width: 300px;
+  max-height: 250px;
   margin: 2%;
   position: relative;
   border-radius: 2%;
@@ -6312,7 +6313,7 @@ main .cortissime_container .card:hover {
 main .lunghe_container .card:hover .background,
 main .corte_container .card:hover .background,
 main .cortissime_container .card:hover .background {
-  transform: scale(1.14);
+  transform: scale(1.12);
 }
 
 main .lunghe_container .card:hover .svg,

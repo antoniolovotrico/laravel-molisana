@@ -27,6 +27,7 @@ main{
         .card{
             flex-basis: 28%;
             min-width: 300px;
+            max-height: 250px;
             margin: 2%;
             position: relative;
             border-radius: 2%;
@@ -42,7 +43,8 @@ main{
             .background{
                 height: 100%;
                 width: 100%;
-                transition: ease-in-out 1s;   
+                transition: ease-in-out 1s;
+                   
             }
             .svg,p,h3{
                 display: none;
@@ -50,7 +52,7 @@ main{
             &:hover{
                 cursor: pointer;  
                 .background{
-                    transform: scale(1.14);
+                    transform: scale(1.12);
                 }
                 .svg{
                     display: block;
