@@ -4,6 +4,7 @@ main{
     width: 100%;
     min-height: 80%;
     align-items: center;
+    justify-content: center;
     background-image: url('../../img/fondo-pag-speciali.jpg');
     h2{
         flex-basis: 100%;
@@ -133,7 +134,7 @@ main{
         display: flex;
         flex-direction: column;
         width: 70%;
-        flex-basis: 80%;
+        flex-basis: 70%;
         background-color: #B8DAE5;
         justify-content: center;
         align-items: center;

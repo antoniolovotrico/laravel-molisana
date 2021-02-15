@@ -6233,6 +6233,7 @@ main {
   width: 100%;
   min-height: 80%;
   align-items: center;
+  justify-content: center;
   background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
 }
 
@@ -6406,7 +6407,7 @@ main .main_container {
   display: flex;
   flex-direction: column;
   width: 70%;
-  flex-basis: 80%;
+  flex-basis: 70%;
   background-color: #B8DAE5;
   justify-content: center;
   align-items: center;
